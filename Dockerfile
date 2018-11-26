@@ -1,7 +1,6 @@
 FROM registry.access.redhat.com/rhel7/rhel:latest
 USER root
 LABEL name="Solution-Soft/Time Machine" vendor="SolutionSoft Systems Inc" version="1.1" release="1" summary="Time Machine Container" description="Time Machine creates virtual clocks for time shift testing of Applications" url="https://solution-soft.com" maintainer="Dragan Trajkovic - SolutionSoft Systems Inc."
-WORKDIR /home/tmss/Docker
 COPY tmDockerfile/help.1 in /
 RUN mkdir -p "/licenses"
 COPY tmDockerfile/licenses in /licenses
