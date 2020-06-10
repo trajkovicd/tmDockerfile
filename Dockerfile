@@ -12,3 +12,4 @@ ADD tm_linux_2.6.up_x86_64-12.9R3.tgz /
 RUN echo timemachine.example.com > /etc/hostname
 RUN useradd -ms /bin/bash tester1
 USER tester1
+CMD tail -f /dev/null
